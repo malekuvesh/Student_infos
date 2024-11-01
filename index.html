@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEBDEV</title>
+</head>
+
+<body>
+    <div class="continer">
+        <div class="box hope">
+            <h3 class="uve">Student Form</h3>
+            <form action="coniction.php" method="post">
+                <div class="fileds">
+                    <label for="filed">School Name:</label>
+                    <input type="text" id="filed" name="school_name" placeholder="Enter Your School Name" required>
+                </div>
+                <div class="fileds">
+                    <label for="student">Student Name:</label>
+                    <input type="text" id="student" name="student_name" placeholder="Enter Your Student Name" required>
+                </div>
+                <div class="fileds">
+                    <label for="Date">Date of birth:</label>
+                    <input type="date" id="Date" name="dob" required>
+                </div>
+                <div class="fileds">
+                    <label for="class">Class:</label>
+                    <input type="text" id="seat" name="class" placeholder="Enter Your Class" required>
+                </div>
+                <div class="fileds">
+                    <label for="roll">Roll Name:</label>
+                    <input type="number" id="roll" name="roll_number" placeholder="Enter Your Roll Number" required>
+                </div>
+                <div class="fileds">
+                    <label for="Contact">Contact Name:</label>
+                    <input type="number" id="Contact" name="contact_number" placeholder="Enter Your Contact Number"
+                        required>
+                </div>
+                <div class="fileds">
+                    <label for="Address">Address:</label>
+                    <textarea name="Address" id="Address" placeholder="Enter Your Address"></textarea>
+                </div>
+                <!-- Keep as a regular button to avoid form submission -->
+                <button class="btn" type="button" id="card1" onclick="update()">Submit</button>
+                <button class="btn" type="reset">Clear all</button>
+                <!-- Close the form tag here -->
+        </div>
+
+        <div class="box main" id="card2" style="display: none;">
+            <h3 class="uve">School Information</h3>
+            <img src="logo-design-template-35b0a3e2315d19a46c046165f315b000.jpg" height="200px" width="200px"
+                alt="Student img">
+            <div class="fileds enter">
+                <label>School Name :</label>
+                <label id="schol"></label>
+            </div>
+            <div class="fileds enter">
+                <label>Student Name :</label>
+                <label id="name"></label>
+            </div>
+            <div class="fileds enter">
+                <label>Date of birth :</label>
+                <label id="entry"></label>
+            </div>
+            <div class="fileds enter">
+                <label>Class :</label>
+                <label id="uvesh"></label>
+            </div>
+            <div class="fileds enter">
+                <label>Roll number :</label>
+                <label id="num"></label>
+            </div>
+            <div class="fileds enter">
+                <label>Contact number :</label>
+                <label id="phone"></label>
+            </div>
+            <div class="fileds enter">
+                <label>Address :</label>
+                <label id="Add"></label>
+            </div>
+            <button class="btn print" type="button" onclick="printpages()">Print</button>
+            <!-- Confirm button that submits the form -->
+            <button class="btn print" type="submit" onclick="magic()">Confirm</button>
+            </form>
+        </div>
+
+    </div>   
+    <script src="java.js"></script>
+</body>
+
+</html>
